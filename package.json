@@ -3,15 +3,38 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --mode development --watch ./leadmanager/frontend/src/index.js --output ./leadmanager/frontend/static/frontend/main.js",
+    "build": "webpack --mode production ./leadmanager/frontend/src/index.js --output ./leadmanager/frontend/static/frontend/main.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "clear": "^0.1.0",
     "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.8"
+    "webpack-bundle-tracker": "^0.4.2-beta",
+    "webpack-cli": "^3.3.9"
   },
-  "dependencies": {},
-  "description": ""
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "description": "learning django-react app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamshale/django-react-tutorial.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jamshale/django-react-tutorial/issues"
+  },
+  "homepage": "https://github.com/jamshale/django-react-tutorial#readme"
 }
